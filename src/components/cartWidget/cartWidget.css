@@ -1,0 +1,24 @@
+.contenedor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.contenedor__numero{
+    align-self: flex-start;
+}
+
+.numero{
+    background-color: #007bff;
+    color: white;
+    border-radius: 50%;
+    padding: 5px;
+    font-size: 11px;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
