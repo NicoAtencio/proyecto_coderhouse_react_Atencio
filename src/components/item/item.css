@@ -1,0 +1,47 @@
+.cards_products{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.soloImagen:hover{
+    background: #f6f6f6;
+    cursor: pointer;
+}
+
+.imagen{
+    object-fit: contain;
+}
+@media only  screen and (max-width: 576px) {
+    .cards_products{
+        width: 30rem;
+    }
+    .contenedor_imagen_productos{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .imagen {
+        height: 10rem;
+        min-width: 100px;
+        object-fit: contain;
+        width: auto;
+    }
+}
+
+
+@media only  screen and (min-width: 576px) {
+    .cards_products{
+        width: 14rem;
+    }  
+}
+
+@media only  screen and (min-width: 768px) {
+    .imagen{
+        height: 16rem;
+    }
+    .cards_products{
+        width: 18rem;
+    }  
+}
