@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { ItemCount } from "../itemCount/ItemCount";
 import "./itemDetail.css"
 import Card from 'react-bootstrap/Card';
@@ -5,29 +6,30 @@ import ListGroup from 'react-bootstrap/ListGroup';
 
 
 export const ItemDetail = ({ product }) => {
-  return (
-    <div className="padre">
-      
-    <div className="detalle">
-      <Card className='cards_products'>
-        <div className='contenedor_imagen_productos'>
-          <div className='soloImagen'>
-            <Card.Img variant="top" src={product.image} className='imagen' />
-          </div>
-          <Card.Body>
-            <Card.Title>{product.name}</Card.Title>
-          </Card.Body>
-        </div>
-        <ListGroup className="list-group-flush">
-          <ListGroup.Item>${product.description}</ListGroup.Item>
-          <ListGroup.Item>${product.price}</ListGroup.Item>
-        </ListGroup>
-        <Card.Body>
-          <ItemCount stock={product.stock} />
-        </Card.Body>
-      </Card>
-    </div>
-    </div>
 
+  const [cantidadAgregada, setCantidadAgregada] = useState(0);
+  const [compra, setCompra] = useState(false)
+  const onAdd  = (cantidad) => {
+    console.log('compraste un item', cantidad)
+    setCantidadAgregada(cantidad)
+    setCompra(true)
+  }
+  console.log(cantidadAgregada)
+  return (
+    <div className="contenedor_padre">
+    <Card className="card_contenedor">
+      <Card.Img variant="top" src={product.image} className="imagen_card"/>
+      <Card.Body>
+        <Card.Title>{product.name}</Card.Title>
+      </Card.Body>
+      <ListGroup className="list-group-flush">
+        <ListGroup.Item>{product.description}</ListGroup.Item>
+        <ListGroup.Item>${product.price}</ListGroup.Item>
+      </ListGroup>
+      <Card.Body>
+        { compra ? <button>Ir al carrito</button> : <ItemCount stock={product.stock} onAdd={onAdd} />}
+      </Card.Body>
+    </Card>
+    </div>
   )
 }

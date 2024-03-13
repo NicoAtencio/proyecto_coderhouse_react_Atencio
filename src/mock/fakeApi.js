@@ -55,7 +55,7 @@ export const products = [
   },
   {
     id: "7",
-    name: "Camista de Boca",
+    name: "Camiseta de Boca",
     stock: 50,
     price: 180000,
     description: "Camiseta de futbol club Boca Junior",
@@ -64,7 +64,7 @@ export const products = [
   },
   {
     id: "8",
-    name: "Camista de River",
+    name: "Camiseta de River",
     stock: 50,
     price: 180000,
     description: "Camista de futbol club River Plate",
@@ -73,7 +73,7 @@ export const products = [
   },
   {
     id: "9",
-    name: "Camista de Independiente",
+    name: "Camiseta de Independiente",
     stock: 24,
     price: 150000,
     description: "Camista de futbol club Independiente de Avellaneda",
