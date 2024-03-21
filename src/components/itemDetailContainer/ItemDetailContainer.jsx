@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { getOneProduct } from "../../mock/fakeApi";
 import { ItemDetail } from "../itemDetail/ItemDetail";
 import { useParams } from "react-router-dom";
+import { Loader } from "../loader/Loader";
 
 export const ItemDetailContainer = () => {
     const [product, setProduct] = useState({})
@@ -16,13 +17,15 @@ export const ItemDetailContainer = () => {
             .finally(() => setLoading(false))
     }, [id])
 
-    if (loading) {
-        return <h1 style={{ textAlign: 'center' }}>Cargando....</h1>
+    // if (loading) {
+    //     return <h1 style={{ textAlign: 'center' }}>Cargando....</h1>
     
-    }
+    // }
         return (
             <div>
-                <ItemDetail product={product} />
+                {/* {loading ? <h1 style={{ textAlign: 'center' }}>Cargando....</h1> : <ItemDetail product={product} />} */}
+                {loading ? <Loader /> : <ItemDetail product={product} />}
+
             </div>
         )
 }

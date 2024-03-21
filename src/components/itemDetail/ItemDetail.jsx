@@ -1,20 +1,21 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { ItemCount } from "../itemCount/ItemCount";
 import "./itemDetail.css"
 import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup';
-
+import { CartContext } from "../../context/CartContext";
 
 export const ItemDetail = ({ product }) => {
 
-  const [cantidadAgregada, setCantidadAgregada] = useState(0);
+  const {addItem} = useContext(CartContext)
   const [compra, setCompra] = useState(false)
+
   const onAdd  = (cantidad) => {
     console.log('compraste un item', cantidad)
-    setCantidadAgregada(cantidad)
+    addItem(product, cantidad)
     setCompra(true)
   }
-  console.log(cantidadAgregada)
+
   return (
     <div className="contenedor_padre">
     <Card className="card_contenedor">

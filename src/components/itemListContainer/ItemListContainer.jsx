@@ -4,6 +4,7 @@ import { getProducts } from "../../mock/fakeApi";
 import { ItemList } from "../itemList/ItemList";
 import "./itemListContainer.css";
 import { useParams } from "react-router-dom";
+import { Loader } from "../loader/Loader";
 
 export const ItemListContainer = ({greeting}) => {
     const [products,setProducts] = useState([]);
@@ -31,10 +32,9 @@ export const ItemListContainer = ({greeting}) => {
 
     if(loading) {
         return(
-            <h1 style={{textAlign:'center'}}>Cargando....</h1>
+                <Loader />
         )
     }
-    console.log(products)
     return (
         <Container >
             {categoryId ? <h2 className="mensaje"> {greeting} <span>{categoryId}</span></h2> : <h2 className="mensaje">{greeting}</h2>}
