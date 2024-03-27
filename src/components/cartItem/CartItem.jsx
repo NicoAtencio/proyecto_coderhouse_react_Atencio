@@ -11,7 +11,7 @@ export const CartItem = ({ compra, removeItem }) => {
             <p>Cantidad: {compra.quantity}</p>
             <p className="no_mostrar">Precio unidad: ${compra.price}</p>
             <p>Precio total: ${compra.price * compra.quantity}</p>
-                <button onClick={() => removeItem(compra.id)}>x</button>
+            <button onClick={() => removeItem(compra.id)}>x</button>
         </div>
     )
 }

@@ -26,9 +26,6 @@ img{
     width: 100px;
 }
 
-.contenedor_boton button{
-    height: 40px;
-}
 
 @media only screen and (max-width: 576px) {
     .contenedor_cart_item{
