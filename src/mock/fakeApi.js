@@ -1,6 +1,5 @@
-export const products = [
+export const productosData = [
   {
-    id: "1",
     name: "Botines Adidas",
     stock: 10,
     price: 200000,
@@ -9,7 +8,6 @@ export const products = [
     category: "Futbol",
   },
   {
-    id: "2",
     name: "Canilleras Adidas",
     stock: 15,
     price: 18000,
@@ -18,7 +16,6 @@ export const products = [
     category: "Futbol",
   },
   {
-    id: "3",
     name: "Pelota Adidas",
     stock: 50,
     price: 12000,
@@ -27,7 +24,6 @@ export const products = [
     category: "Futbol",
   },
   {
-    id: "4",
     name: "Conos",
     stock: 30,
     price: 3000,
@@ -36,7 +32,6 @@ export const products = [
     category: "Accesorios",
   },
   {
-    id: "5",
     name: "Inflador",
     stock: 10,
     price: 26000,
@@ -45,7 +40,6 @@ export const products = [
     category: "Accesorios",
   },
   {
-    id: "6",
     name: "Medias",
     stock: 40,
     price: 13000,
@@ -54,7 +48,6 @@ export const products = [
     category: "Accesorios",
   },
   {
-    id: "7",
     name: "Camiseta de Boca",
     stock: 50,
     price: 180000,
@@ -63,7 +56,6 @@ export const products = [
     category: "Futbol",
   },
   {
-    id: "8",
     name: "Camiseta de River",
     stock: 50,
     price: 180000,
@@ -72,7 +64,6 @@ export const products = [
     category: "Futbol",
   },
   {
-    id: "9",
     name: "Camiseta de Independiente",
     stock: 24,
     price: 150000,
@@ -81,7 +72,6 @@ export const products = [
     category: "Futbol",
   },
   {
-    id: "10",
     name: "Camiseta de Racing",
     stock: 10,
     price: 150000,
@@ -90,7 +80,6 @@ export const products = [
     category: "Futbol",
   },
   {
-    id: "11",
     name: "Camiseta de Celtics",
     stock: 8,
     price: 80000,
@@ -99,7 +88,6 @@ export const products = [
     category: "Basket",
   },
   {
-    id: "12",
     name: "Camiseta de los Bulls",
     stock: 12,
     price: 80000,
@@ -108,7 +96,6 @@ export const products = [
     category: "Basket",
   },
   {
-    id: "13",
     name: "Camiseta de tenis",
     stock: 20,
     price: 100000,
@@ -117,7 +104,6 @@ export const products = [
     category: "Tenis",
   },
   {
-    id: "14",
     name: "Camiseta de tenis",
     stock: 16,
     price: 120000,
@@ -126,7 +112,6 @@ export const products = [
     category: "Tenis",
   },
   {
-    id: "15",
     name: "Camista de tenis",
     stock: 10,
     price: 90000,
@@ -135,7 +120,6 @@ export const products = [
     category: "Tenis",
   },
   {
-    id: "16",
     name: "Camista de los Lakers",
     stock: 7,
     price: 80000,
@@ -144,7 +128,6 @@ export const products = [
     category: "Basket",
   },
   {
-    id: "17",
     name: "Camiseta San Antonio Spurs",
     stock: 10,
     price: 83000,
@@ -153,7 +136,6 @@ export const products = [
     category: "Basket",
   },
   {
-    id: "18",
     name: "Gorra",
     stock: 24,
     price: 40000,
@@ -162,7 +144,6 @@ export const products = [
     category: "Accesorios",
   },
   {
-    id: "19",
     name: "Muñequeras",
     stock: 14,
     price: 9000,
@@ -171,7 +152,6 @@ export const products = [
     category: "Accesorios",
   },
   {
-    id: "20",
     name: "Pantalon de basket",
     stock: 36,
     price: 75000,
@@ -180,7 +160,6 @@ export const products = [
     category: "Basket",
   },
   {
-    id: "21",
     name: "Pelota de basket",
     stock: 40,
     price: 33000,
@@ -189,7 +168,6 @@ export const products = [
     category: "Basket",
   },
   {
-    id: "22",
     name: "Pelota de tenis",
     stock: 89,
     price: 4000,
@@ -198,7 +176,6 @@ export const products = [
     category: "Tenis",
   },
   {
-    id: "23",
     name: "Raqueta de tenis",
     stock: 10,
     price: 150000,
@@ -207,7 +184,6 @@ export const products = [
     category: "Tenis",
   },
   {
-    id: "24",
     name: "Raqueta de tenis",
     stock: 7,
     price: 138000,
@@ -216,7 +192,6 @@ export const products = [
     category: "Tenis",
   },
   {
-    id: "25",
     name: "Zapatillas de basket",
     stock: 23,
     price: 230000,
@@ -225,7 +200,6 @@ export const products = [
     category: "Basket",
   },
   {
-    id: "26",
     name: "Zapatilla de tenis",
     stock: 13,
     price: 300000,
@@ -234,7 +208,6 @@ export const products = [
     category: "Tenis",
   },
   {
-    id: "27",
     name: "Tablero de basket",
     stock: 2,
     price: 400000,
@@ -244,29 +217,29 @@ export const products = [
   },
 ];
 
-export const getProducts = () => {
-  return new Promise((resolve, reject) => {
-    const error = false;
-    setTimeout(() => {
-      if (error) {
-        reject(error);
-      } else {
-        resolve(products);
-      }
-    }, 2000);
-  });
-};
+// export const getProducts = () => {
+//   return new Promise((resolve, reject) => {
+//     const error = false;
+//     setTimeout(() => {
+//       if (error) {
+//         reject(error);
+//       } else {
+//         resolve(products);
+//       }
+//     }, 2000);
+//   });
+// };
 
-export const getOneProduct = (id) => {
-  let error = false;
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      if (error) {
-        reject(error);
-      } else {
-        const product = products.find((product) => product.id === id);
-        resolve(product);
-      }
-    }, 2000);
-  });
-};
+// export const getOneProduct = (id) => {
+//   let error = false;
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       if (error) {
+//         reject(error);
+//       } else {
+//         const product = products.find((product) => product.id === id);
+//         resolve(product);
+//       }
+//     }, 2000);
+//   });
+// };
