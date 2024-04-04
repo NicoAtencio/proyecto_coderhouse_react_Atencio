@@ -1,4 +1,5 @@
 import "./cartItem.css";
+import { Button } from "react-bootstrap";
 
 
 export const CartItem = ({ compra, removeItem }) => {
@@ -11,7 +12,7 @@ export const CartItem = ({ compra, removeItem }) => {
             <p>Cantidad: {compra.quantity}</p>
             <p className="no_mostrar">Precio unidad: ${compra.price}</p>
             <p>Precio total: ${compra.price * compra.quantity}</p>
-            <button onClick={() => removeItem(compra.id)}>x</button>
+            <Button className="botonQuitar" variant="danger" onClick={() => removeItem(compra.id)}>X</Button>
         </div>
     )
 }

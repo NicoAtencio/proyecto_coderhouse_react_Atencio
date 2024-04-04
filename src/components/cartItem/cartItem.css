@@ -26,6 +26,9 @@ img{
     width: 100px;
 }
 
+.botonQuitar{
+    margin-bottom: 10px;
+}
 
 @media only screen and (max-width: 576px) {
     .contenedor_cart_item{

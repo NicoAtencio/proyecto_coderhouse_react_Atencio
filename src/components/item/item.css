@@ -3,10 +3,19 @@
     margin-left: 10px;
 }
 
-.soloImagen:hover{
+.cards_products:hover{
     background: #f6f6f6;
     cursor: pointer;
 }
+
+.irDetalle{
+    text-decoration: none;
+}
+
+/* .soloImagen:hover{
+    background: #f6f6f6;
+    cursor: pointer;
+} */
 
 .imagen{
     object-fit: contain;

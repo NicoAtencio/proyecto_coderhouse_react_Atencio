@@ -4,10 +4,9 @@ import { useContext } from "react"
 
 export const Cart = () => {
     const {cart} = useContext(CartContext)
-    console.log('Este es el cart desde Cart', cart.length)
     return(
         <div>
-            {!cart.length ? <p>Vacio</p> : <CartView />}
+            {!cart.length ? <h2 style={{textAlign: "center"}}>Su carro se encuentra vacio.</h2> : <CartView />}
         </div>
     )
 }

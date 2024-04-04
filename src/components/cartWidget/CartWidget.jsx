@@ -7,9 +7,12 @@ export const CartWidget = () => {
     return (
         <div className="contenedor">
             <PiShoppingCartBold size={25}/>
+            {
+                cartQuantity() !== 0 &&
             <div className="contenedor__numero">
                 <div className="numero">{cartQuantity()}</div>
             </div>
+            }
         </div>
     )
 }

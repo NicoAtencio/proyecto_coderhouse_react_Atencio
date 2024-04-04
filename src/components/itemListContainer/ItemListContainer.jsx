@@ -1,6 +1,5 @@
 import { Container } from "react-bootstrap";
 import { useState,useEffect } from "react";
-// import { getProducts } from "../../mock/fakeApi";
 import { ItemList } from "../itemList/ItemList";
 import "./itemListContainer.css";
 import { useParams } from "react-router-dom";

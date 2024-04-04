@@ -1,0 +1,27 @@
+.contenedor_opciones_carro{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.contenedor_opciones_carro--separador{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.boton_vaciar_carro{
+    margin-right: 4px;
+}
+
+@media only screen and (max-width : 576px) {
+    .contenedor_opciones_carro{
+        justify-content: center;
+    }
+
+    .contenedor_opciones_carro--separador{
+        align-items: center;
+    }
+    .boton_finalizar_compra{
+        margin-left: 4px;
+    }
+}

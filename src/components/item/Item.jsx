@@ -20,7 +20,7 @@ export const Item = ({ product }) => {
         <ListGroup.Item>${product.price}</ListGroup.Item>
       </ListGroup>
       <Card.Body>
-        <Card.Link as={Link} to={`/item/${product.id}`}>Ver detalle</Card.Link>
+        <Card.Link className='irDetalle' as={Link} to={`/item/${product.id}`}>Ver detalle</Card.Link>
       </Card.Body>
     </Card>
   )

@@ -1,0 +1,16 @@
+.contenedor_itemCount{
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor_contador{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton{
+    margin-left: 4px;
+    margin-right: 4px;
+}
