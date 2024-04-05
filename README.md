@@ -1,6 +1,6 @@
 # Tienda de deportes⚽
 
-Este proyecto es un e-commerce para el preyecto final de React.js de la academia Coderhouse.
+Este proyecto es un e-commerce para el proyecto final de React.js de la academia Coderhouse.
 
 ![Imagen tienda de deportes](https://i.postimg.cc/0j2jGpTM/imagen-Proyecto.png)
 
