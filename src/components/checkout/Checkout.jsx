@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import { Container } from "react-bootstrap";
 import { useForm } from "react-hook-form";
 import { Loader } from "../loader/Loader";
+import "./checkout.css"
 
 export const Checkout = () => {
   const { register, handleSubmit, formState: { errors }, getValues } = useForm()
@@ -44,21 +45,23 @@ export const Checkout = () => {
 
   return (
     <Container>
-      <div>
+      <div className="contenedor_general_chaeckout">
         {orderId !== "" ?
           <div>
             <h3>Generaste tu compra, su seguimiento es {orderId} </h3>
             <Link to="/">Volver a Home</Link>
           </div>
           :
-          <div>
+          <div className="contenedor_formulario">
             <h4>Completa tus datos</h4>
             <form onSubmit={handleSubmit(finalizarCompra)}>
               <input className="form-control" type="text" name="name" placeholder="Ingrese su nombre" {...register("name", { required: true, minLength: 2 })} />
               {errors?.name?.type === "required" && <p>El nombre es requerido</p>}
               {errors?.name?.type === "minLength" && <p>El nombre debe tener al menos dos carateres</p>}
               <input className="form-control" type="text" name="apellido" placeholder="Ingrese su apellido" {...register("apellido", {required: true})} />
-              {errors?.name?.type === "required" && <p>El Apellido es requerido</p>}
+              {errors?.apellido?.type === "required" && <p>El Apellido es requerido</p>}
+              <input className="form-control" type="number" name="telefono" placeholder="Ingrese su telefono" {...register("telefono", {required: true})} />
+              {errors?.telefono?.type === "required" && <p>El telefono es requerido</p>}
               <input className="form-control" type="email" name="email" placeholder="Ingrese su correo" {...register("email", { required: true })} />
               {errors?.email?.type === "required" && <p>El mail es requerido</p>}
               <input className="form-control" type="email" name="segundo-email" placeholder="Repita su correo" {...register("email2", { required: true, validate: { equalsMails: mails2 => mails2 === getValues().email } })} />

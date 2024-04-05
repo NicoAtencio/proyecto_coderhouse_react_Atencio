@@ -2,24 +2,29 @@
 
 Este proyecto es un e-commerce para el preyecto final de React.js de la academia Coderhouse.
 
+![Imagen tienda de deportes](https://i.postimg.cc/0j2jGpTM/imagen-Proyecto.png)
+
+### Autor
+
+Hector Nicolas Atencio
+
 ### Instalación
 
 - Clonar el repositorio
 - Ejecute mpn install para instalar dependencias
 - Ejecute npm start para levantar proyecto de manera local
 
-In the project directory, you can run:
-
 ### Version Host 
 
-[Tienda de deportes]
+[Tienda de deportes](https://proyecto-coderhouse-react-atencio.vercel.app/)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
 ### Librerias utilizadas
 
--[Bootstrap](https://getbootstrap.esdocu.com/): Utilizado para asignar estilos.
--[Firebase](): Utilizado como base de datos del proyecto
--[React Router Dom](): Utilizado para navegar por rutas.
--[]
+- [Bootstrap](https://getbootstrap.esdocu.com/): Utilizado para asignar estilos.
+- [react-bootstrap](https://react-bootstrap.netlify.app/): Utilizado para componentes con estilos
+- [Firebase](https://firebase.google.com/?hl=es): Utilizado como base de datos del proyecto
+- [React Router Dom](https://reactrouter.com/en/main/start/tutorial): Utilizado para navegar por rutas.
+- [react-hook-form](https://react-hook-form.com/get-started): Utilizado para validar formulario para simular finalización de compra
+- [react-icons](https://www.npmjs.com/package/react-icons): Utilizado para el icono del carro
+- [react-spinners](https://www.davidhu.io/react-spinners/): Utilizado para mostrar un cargador cuando la pagina este cargando
